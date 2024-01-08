@@ -1,5 +1,7 @@
 package com.project.taskmanager.dto;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
@@ -31,5 +33,6 @@ public class UserDTO {
     @Size(min = 5, max = 12, message = "User Password should be between 5 to 12 characters in length")
     private String password;
 
-    
+    private List<TaskDTO> assignedTasks;
+
 }

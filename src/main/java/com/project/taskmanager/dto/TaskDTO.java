@@ -2,9 +2,11 @@ package com.project.taskmanager.dto;
 
   
 import java.time.LocalDate;
+import java.util.List;
 
 import com.project.taskmanager.entity.Priority;
 import com.project.taskmanager.entity.Status;
+import com.project.taskmanager.entity.UserEntity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -40,5 +42,7 @@ public class TaskDTO {
     private LocalDate createdDate;
 
     private LocalDate completedDate;
+
+    private List<UserEntity> assignedUsers;
 }
 
